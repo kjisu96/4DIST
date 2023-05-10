@@ -25,7 +25,7 @@ size: out.elf
 	$(SIZE) $< 
 
 qemu: 
-	~/Work/qemu-arm-dev/linux-x64/install/qemu-arm/bin/qemu-system-gnuarmeclipse -cpu cortex-m4 -machine STM32F4-Discovery -gdb tcp::3333 -kernel out.elf
+	~/xpack-qemu-arm-7.2.0-1/bin/qemu-system-gnuarmeclipse -cpu cortex-m4 -machine STM32F4-Discovery -gdb tcp::3333 -kernel out.elf
 
 gdb:
 	./run_gdb.sh
